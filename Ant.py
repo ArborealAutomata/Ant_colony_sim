@@ -1,5 +1,9 @@
-#! python3
+#!/usr/bin/env python3
 
+"""
+Ant sprite class governing ant behaviour.
+for ant colony simulation.
+"""
 import os
 import random
 import pygame

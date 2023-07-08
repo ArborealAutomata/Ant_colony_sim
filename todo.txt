@@ -1,9 +1,5 @@
 Trivial:
 -----------------------------------------------------------
-Brush Button colours when active
-
-Pause → start text swap
-Start - green / stop - red; swap
 
 Move window up & left when selection of map 3.
 
@@ -12,40 +8,14 @@ button for spawning ants, some way of altering colony size.
 -----------------------------------------------------------
 Core:
 -----------------------------------------------------------
-Brush selection
-- left click: on the button
-- button changes colour: Food, Wall or Nest
-    - Sets brush type to Food, Wall or Nest
-    - For Food and Nest: 
-        - while mouse1 is down until mouse1 us up:
-            - when mouse moves: 
-                - try and spawn a Food or Wall on screen.
-    - Only one instance of nest is allowed
-- when the user clicks and drags on the screen
-    - 
 
 Brush deselection.
 - right click or left click on the button again
 
-Food:
-- create a group for these sprites
-- when this sprite type is selected
-- when mouse is clicked on the screen then 
-- check if that spot is part of another sprite
-- if it isn't then spawn a sprite of this type at that point
-- add the sprite to the group
-
-
-Wall:
-
-Nest:
 
 FoodPheromone:
 
 NoFoodPheromone:
-
-
-Sprite containers for all types.
 
 Collision test
 - for each ant instance check if collides with any other class instance in respective container.
@@ -55,18 +25,35 @@ Surface edge collision: stay on screen. +/- x & y boundries.
 
 Food picked up = destroyed.
 
+Ant: may require re-write.
+
 Ant: food variable, use for fitness, judge when ant returns to nest. Ant finds nest instance destroyed.
 
 Add ant lifespan, extend when find food.
 
 Auto spawn Nest instance @ random point within an area of the map. 50 pixels from an edge.
 
-sprites: vectors
+sprites: vectors 
+- vector based movement.
+- vector based sensing.
 
 surfaces for sprites 
+
+make flowchart of learning model.
+
+modularized reinforment learning contrl control, probably FSM based.
+- reward functionality
+- assessment
+- save weights etc. or reprisentation of the solution into a file 
+  in the data folder, each time a new agent spawns use this as a template
+  to build on.
+- initially apply GA
+- Q-learning
+
 
 -----------------------------------------------------------
 Extras:
 -----------------------------------------------------------
 
+research and implement ANNs
 

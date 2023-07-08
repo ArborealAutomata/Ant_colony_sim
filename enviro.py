@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+Enviromental assets sprites
+for ant colony simulation.
+"""
+__author__ = "James Davis"
+__version__ = "0.1.2"
+__license__ = "MIT"
+
 import pygame
 
 #colours of sprites
